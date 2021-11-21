@@ -1,28 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My form exercise</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <h1>Product Pick</h1>
-  </header>
-  <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>My form exercise</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Product Pick</h1>
+    </header>
+    <main>
+      <form>
+        <!-- write your html here-->
+        <!-- try writing out the requirements first-->
+        <label for="customer-name">Customer name</label>
+        <input type="text" id="customer-name" required />
 
-  </main>
-  <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
-  </footer>
-</body>
+        <label for="customer-email">Customer Email</label>
+        <input type="email" id="customer-email" required />
 
+        <label for="color">Favourite Color</label>
+        <select id="color">
+          <option for="color" id="color">Blue</option>
+          <option for="color" id="color">Yellow</option>
+          <option for="color" id="color">Green</option>
+        </select>
+
+        <fieldset class="size">
+          <p>T-shirt Size</p>
+          <label for="size-1">Small</label>
+          <input type="radio" id="size-1" />
+          <label for="size-2">Medium</label>
+          <input type="radio" id="size-2" />
+          <label for="size-3">Large</label>
+          <input type="radio" id="size-3" />
+        </fieldset>
+
+        <label for="address">Address</label>
+        <textarea type="text" id="address"></textarea>
+
+        <button type="Submit">Submit</button>
+      </form>
+    </main>
+    <footer>
+      <!-- change to your name-->
+      <h2>By HOMEWORK SOLUTION</h2>
+    </footer>
+  </body>
 </html>
